@@ -1,2 +1,2 @@
 # win-svchost-service-injector
-custom Windows DLL Service installation mechanism within native svchost.exe process, designed to execute arbitrary code. supports both manual and auto(on every boot) service start up.
+DLL service loader that uses Service Group Injection and Registry-Based Service Registration to execute a DLL inside a native Windows svchost.exe process context.  The implementation contrasts standard SCM API usage against direct, low-level registry manipulation to establish service parameters and execute payloads. (though,both approach, manual registry manipulation and service creation windows api are provided)
